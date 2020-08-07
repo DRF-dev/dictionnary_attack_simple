@@ -19,6 +19,8 @@ def hash_crack():
             if mot_hashed == mdp_md5:
                 print(f'Mot de passe trouvé : {mot} dont le hash est : {mot_hashed} en {time.time() - debut_crack} secondes')
                 trouver = True
+            if trouver:
+                break
         if not trouver:
             print("Mot de passe non-trouvé")
         liste_mot.close()
