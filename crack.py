@@ -29,7 +29,7 @@ def hash_crack():
         sys.exit(1)
     except Exception as err:
         print("Erreur trouvé dans hash_crack() :", err)
-        sys.exit(2)
+        sys.exit(1)
 
 
 debut_crack = time.time()
